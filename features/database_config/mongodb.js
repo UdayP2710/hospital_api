@@ -5,6 +5,6 @@ export const connectToDatabase = async () => {
     await mongoose.connect("mongodb://localhost:27017/hospital_API");
     console.log("Database connected successfully!!!!");
   } catch (err) {
-    console.log("something went wrong while connecting to database!!!!!");
+    console.log("something went wrong while connecting to database!!!!!"+"  "+ err);
   }
 };
